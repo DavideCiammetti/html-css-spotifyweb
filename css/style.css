@@ -4,6 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* global */
+:root{
+    --black: black;
+}
+ul,
+li{
+    list-style: none;
+}
+/* global */
 
 /* DEBUG */
 
@@ -18,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(160, 34, 34);
+    background-color: var(--black);
     height: 100vh;
     width: 3.125rem;
 }
@@ -36,6 +45,14 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .man-logo{
         padding-top: 1.4375rem;
         padding-bottom: .625rem;
+    }
+    .man-logo img{
+        border-radius: 50%;
+        background-color: #808080;
+        object-fit: cover;
+    }
+    .xs-li a img{
+        filter: invert(9%) sepia(1%) saturate(1331%) hue-rotate(118deg) brightness(100%) contrast(89%);
     }
     /* parte inferiore */
 /* FINE NAVBAR */
