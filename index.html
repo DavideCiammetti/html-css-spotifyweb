@@ -6,6 +6,11 @@
     <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link font awesome -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- google font -->
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,40 +20,98 @@
     <!-- fine header -->
     <!-- main -->
     <main>
-      <nav class="navbar">
-        <!-- contenitore schermo xs -->
-        <div class="xs-container"> 
-            <ul class="xs-list">        <!--parte superiore -->
-                <li class="xs-li logo-xs">
-                    <a href="#"><img src="./img/logo-small.svg" alt="logo.img"></a>
-                </li>
+        <nav class="navbar">
+            <!-- contenitore schermo xs -->
+            <div class="xs-container"> 
+                <ul class="xs-list">        <!--parte superiore -->
+                    <li class="xs-li logo-xs">
+                        <a href="#"><img src="./img/logo-small.svg" alt="logo.img"></a>     <!--logo-->
+                    </li>
 
-                <li class="xs-li">
-                    <a href="#"><img src="./img/home.svg" alt="home.svg"></a>   <!--casa-->
-                </li>
+                    <li class="xs-li">
+                        <a href="#"><img src="./img/home.svg" alt="home.svg"></a>   <!--casa-->
+                    </li>
 
-                <li class="xs-li">
-                    <a href="#"><img src="./img/search.svg" alt="search.svg"></a>    <!--lente-->
-                </li>
+                    <li class="xs-li">
+                        <a href="#"><img src="./img/search.svg" alt="search.svg"></a>    <!--lente-->
+                    </li>
 
-                <li class="xs-li">
-                    <a href="#"><img src="./img/libreria.svg" alt="libreria.svg"></a>   <!--libreria-->
-                </li>
-            </ul>                        <!--parte inferiore -->
-           <div class="xs-content-list">
-            <ul class="xs-list">
-                <li class="xs-li last-list">
-                    <a href="#"><img src="./img/download.svg" alt="download.svg"></a>   <!--download-->
-                </li>
+                    <li class="xs-li">
+                        <a href="#"><img src="./img/libreria.svg" alt="libreria.svg"></a>   <!--libreria-->
+                    </li>
+                </ul>    
+                                    <!--parte inferiore -->
+            <div class="xs-content-list">
+                    <ul class="xs-list">
+                        <li class="xs-li last-list">
+                            <a href="#"><img src="./img/download.svg" alt="download.svg"></a>   <!--download-->
+                        </li>
 
-                <li class="xs-li last-list man-logo">
-                    <a href="#"><img src="./img/profile.svg" alt="user.svg"></a>          <!--user--> 
-                </li>
-            </ul>
-           </div>
-        </div>
-        <!--fine contenitore schermo xs -->
-      </nav>
+                        <li class="xs-li last-list man-logo">
+                            <a href="#"><img src="./img/profile.svg" alt="user.svg"></a>          <!--user--> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--fine contenitore schermo xs -->
+            <!-- inizio contenitore schermo s-m-l -->
+            <div class="menu-large-container">
+                <div class="large-content">
+                    <ul class="xs-list">        <!--parte superiore -->
+                        <li class="xs-li  l-li">
+                            <img src="./img/logo.svg" alt="logo.img" class="logo-l"> <!--logo-->
+                        </li>
+
+                        <li class="xs-li l-li">
+                            <a href="#" class="home-large align-p"><img src="./img/home.svg" alt="home.svg"></a>
+                            <p class="p-large"><strong>Home</strong></p>   <!--casa-->
+                        </li>
+
+                        <li class="xs-li l-li">
+                            <a href="#"><img src="./img/search.svg" alt="search.svg" class="align-p">
+                            <p class="p-large"><strong>Cerca</strong></p></a>   <!--lente-->
+                        </li>
+
+                        <li class="xs-li l-li">
+                            <a href="#"><img src="./img/libreria.svg" alt="libreria.svg"  class="align-p">
+                            <p class="p-large"><strong>La tua libreria</strong></p></a>   <!--libreria-->
+                        </li>
+                    </ul>
+                    <div class="playlist-container">
+                            <h3 class="playlist-titolo">PLAYLIST</h3>
+                        <ul>
+                            <li class="play-li add-ico">
+                                <a href="#"><i class="fa-solid fa-square-plus"></i>
+                                <p class="p-large"><strong>Crea Playlist</strong></p></a>
+                            </li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                            <li class="play-li name-list"><strong>Nome Playlist</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                 <!--parte inferiore -->
+                <div class="large-content-list">
+                    <ul class="xs-list">
+                        <li class="xs-li last-list l-li">
+                            <a href="#"><img src="./img/download.svg" alt="download.svg"  class="align-p"  class="align-p"></a>
+                            <p class="p-large"><strong>Installa app</strong></p>   <!--download-->
+                        </li>
+                        <div class="hr"></div>
+                        <li class="xs-li last-list man-logo l-li">
+                            <a href="#" class="user-name"><img src="./img/profile.svg" alt="user.svg"  class="align-p"></a>
+                            <p class="p-large"><strong>John Doe</strong></p>          <!--user--> 
+                        </li>
+                    </ul>
+                    <!-- parte inferiore -->
+                </div>
+            </div>
+            <!-- fine contenitore schermo s-m-l -->
+        </nav>
     </main>
     <!-- fine main -->
     <!-- footer -->

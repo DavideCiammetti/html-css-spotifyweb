@@ -4,19 +4,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* global */
 :root{
     --black: black;
+    --grey:#717171;
+    --white: white;
+}
+.p-large{
+    color: var(--grey);
+    display: inline-block;
+    vertical-align: super;
+}
+a{
+    text-decoration: none;
+    color: var(--grey);
 }
 ul,
 li{
     list-style: none;
 }
+
 /* global */
-
-/* DEBUG */
-
-/* DEBUG */
 
 /* HEADER */
 /* HEADER */
@@ -55,5 +66,78 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         filter: invert(9%) sepia(1%) saturate(1331%) hue-rotate(118deg) brightness(100%) contrast(89%);
     }
     /* parte inferiore */
+    /* GESTIONE schermo s-m-l */
+    .menu-large-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--black);
+        height: 100vh;
+        width: 16.25rem;
+    }
+    .menu-large-container{
+        display: none;
+    }
+    .menu-large-container ul li a img{
+        width: 15%;
+    }
+    li.l-li{
+        text-align: left;
+    }
+    .home-large,
+    .playlist-titolo,
+    .user-name
+    {
+        color: var(--white);
+    }
+    .playlist-titolo{
+        padding-top: 1.875rem;
+    }
+    .l-li .logo-l{
+        width: 80%;
+    }
+    .name-list{
+        padding: .9375rem;
+        color: var(--grey);
+    }
+    /* .playlist-container{
+        max-height: 200px;   
+        overflow: auto;
+    } *//*prova*/
+    .add-ico a i{
+        font-size: 3.125rem;
+        padding-top: .9375rem;
+        padding-right: .6875rem;
+    }
+    .large-content,
+    .playlist-container,
+    .large-content-list{
+        background-color: var(--black);
+    }
+    .play-li,
+    .playlist-titolo{
+        padding-left: 1.0625rem;  
+    }
+    .hr{
+        width: 220px;
+        margin: 0 auto;
+        background: var(--grey);
+        height: 2px;
+
+    }
+    .align-p{  
+        vertical-align: sub;  
+        margin-right: 10px;   /*tag "a"*/
+    }
+    /* fine gestione schermo s-m-l */
 /* FINE NAVBAR */
 /* MAIN */
+@media screen and (min-width: 577px){
+    .xs-container,
+    .xs-content-list{
+        display: none;
+    }
+    .menu-large-container{
+        display: flex;
+    }
+}
