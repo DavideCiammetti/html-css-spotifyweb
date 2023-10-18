@@ -36,7 +36,7 @@ header{
 .header-container{
     background-color: var(--black);
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     opacity: 0.3;
     position: fixed;
 }
@@ -119,17 +119,14 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         padding: .9375rem;
         color: var(--grey);
     }
-    /* .playlist-container{
-        max-height: 200px;   
+    .playlist-container{
+        max-height: 12.5rem;   
         overflow: auto;
-    } *//******************prova*/
+    } 
     .add-ico a i{
         font-size: 3.125rem;
         padding-top: .9375rem;
         padding-right: .6875rem;
-    }
-    .playlist-container{
-        height: 9.375rem;
     }
     .large-content,
     .playlist-container,
@@ -141,7 +138,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         padding-left: 1.0625rem;  
     }
     .hr{
-        width: 220px;
+        width: 13.75rem;
         margin: 0 auto;
         background: var(--grey);
         height: 2px;
@@ -152,25 +149,37 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     }
     .align-p{  
         vertical-align: sub;  
-        margin-right: 10px;   /*tag "a"*/
+        margin-right: .625rem;   /*tag "a"*/
     }
     /* fine gestione schermo s-m-l */
 /* FINE NAVBAR */
 /* SECTION 1 */
-    /* .first-section{
-        background-color: yellow;
-        width: 100%;
-        height: 73px;
-    } */
+    .first-section{
+        width: calc(100% - 220px);
+    }
+    .first-section-container{
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        left: 220px;
+        position: relative;
+        top: 3.75rem;
+    }
+    .first-section-container p{
+        padding: 1.5rem;
+        color: var(--grey);
+        font-size: 17px;
+    }
 /* FINE SECTION 1 */
 /* MAIN */
+
 /* FOOTER */
 .footer-container{
     background-color: #da1515;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
 }
 /* FOOTER */
 @media screen and (min-width: 577px){
@@ -180,5 +189,10 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     }
     .menu-large-container{
         display: flex;
+    }
+}
+@media screen and (min-width: 577px){
+    .first-section-container{
+        flex-wrap: wrap;
     }
 }
