@@ -5,3 +5,38 @@
     box-sizing: border-box;
 }
 
+/* DEBUG */
+
+/* DEBUG */
+
+/* HEADER */
+/* HEADER */
+
+/* MAIN */
+/* NAVBAR */
+.xs-container{              /*contenitore principale dell'xs schermo*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(160, 34, 34);
+    height: 100vh;
+    width: 3.125rem;
+}
+    /* parte superiore */
+li.xs-li {                  /*lista schermo xs*/
+    text-align: center;
+    padding: .875rem;
+}
+li.xs-li.logo-xs {          /*logo schermo xs*/
+    padding-top: .3125rem;
+    padding-bottom: 1.0625rem;
+}
+    /* fine parte superiore */
+    /* parte inferiore */
+    .man-logo{
+        padding-top: 1.4375rem;
+        padding-bottom: .625rem;
+    }
+    /* parte inferiore */
+/* FINE NAVBAR */
+/* MAIN */
