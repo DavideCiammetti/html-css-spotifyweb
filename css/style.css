@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #141922;
 }
 /* global */
 :root{
@@ -55,10 +56,10 @@ main{
 .xs-container{              /*contenitore principale dell'xs schermo*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: var(--black);
-    height: 100vh;
+    height: calc(100% - 60px);
     width: 3.125rem;
+    position: fixed;
 }
     /* parte superiore */
 li.xs-li {                  /*lista schermo xs*/
@@ -80,6 +81,9 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         background-color: #808080;
         object-fit: cover;
     }
+    .xs-content-list{
+        margin-top: auto;
+    }
     .xs-li a img{
         filter: invert(9%) sepia(1%) saturate(1331%) hue-rotate(118deg) brightness(100%) contrast(89%);
     }
@@ -88,9 +92,8 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .menu-large-container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         background-color: var(--black);
-        height: calc(100vh - 60px);
+        height: calc(100% - 60px);
         width: 13.75rem;
         position: fixed;
     }
@@ -99,6 +102,10 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     }
     .menu-large-container ul li a img{
         width: 15%;
+    }
+    .large-content{
+        display: contents;
+
     }
     li.l-li{
         text-align: left;
@@ -120,8 +127,12 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         color: var(--grey);
     }
     .playlist-container{
-        max-height: 12.5rem;   
         overflow: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        flex-grow: 1;
+        min-height: 120px;
     } 
     .add-ico a i{
         font-size: 3.125rem;
@@ -151,25 +162,30 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         vertical-align: sub;  
         margin-right: .625rem;   /*tag "a"*/
     }
+    .large-content-list{
+        margin-top: auto;
+    }
     /* fine gestione schermo s-m-l */
 /* FINE NAVBAR */
 /* SECTION 1 */
     .first-section{
-        width: calc(100% - 220px);
+        width: calc(100% - 50px);
     }
     .first-section-container{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         height: 60px;
-        left: 220px;
+        left: 50px;
         position: relative;
         top: 3.75rem;
     }
     .first-section-container p{
-        padding: 1.5rem;
+        padding: .625rem;
         color: var(--grey);
-        font-size: 17px;
+        font-size: 11px;
     }
+   
 /* FINE SECTION 1 */
 /* MAIN */
 
@@ -182,7 +198,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     height: 3.75rem;
 }
 /* FOOTER */
-@media screen and (min-width: 577px){
+@media screen and (min-width: 576px){
     .xs-container,
     .xs-content-list{
         display: none;
@@ -191,8 +207,48 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         display: flex;
     }
 }
+
 @media screen and (min-width: 577px){
     .first-section-container{
-        flex-wrap: wrap;
+        left: 220px;
+    }
+    .first-section{
+        width: calc(100% - 220px);
+    }
+    .first-section-container p{
+        padding: 1.125rem;
+        color: var(--grey);
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .first-section-container{
+        left: 220px;
+    }
+
+    .first-section{
+        width: calc(100% - 220px);
+    }
+    .first-section-container p{
+        padding: 1rem;
+        color: var(--grey);
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 992px){
+    .first-section-container{
+        left: 220px;
+    }
+
+    .first-section{
+        width: calc(100% - 220px);
+    }
+    .first-section-container p{
+        padding: 1.5rem;
+        color: var(--grey);
+        font-size: 15px;
+        flex-wrap: nowrap;
     }
 }
