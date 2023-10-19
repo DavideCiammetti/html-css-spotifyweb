@@ -253,7 +253,9 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 }
 /* FINE SEZIONE 2 */
 /* SEZIONE 3 */
-.section-3{
+.section-3,
+.section-4,
+.section-5{
     width: 100%;
     margin-left: 3.125rem;
 }
@@ -271,13 +273,23 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 }
 /* FINE SEZIONE 3 */
 /* SEZIONE 4 */
-.section-4{
-    width: 100%;
-}
+/* LA LARGHEZZA DELLE SECTION-4 E DELLA SECTION-5 SI TROVA NELLA SEZIONE 3 */
 .border-r{
     border-radius: 50%;
 }
 /* FINE SEZIONE 4 */
+
+/* sezione 5 */
+img.img-width {
+    width: 50%;
+}
+.bottom-img{
+    padding-bottom: 80px;
+    text-align: justify;
+}
+.bottom-img h3{
+    padding-left: 5px;
+}
 /* MAIN */
 
 /* FOOTER */
@@ -309,7 +321,8 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section,
     .two-section,
     .section-3,
-    .section-4{
+    .section-4,
+    .section-5{
         margin-left: 13.75rem;
     }
     .first-section{
@@ -329,6 +342,10 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .box-3{
         width: 43%;
     }
+    /* sezione 5 */
+    img.img-width {
+        width: 100%;
+    }
 }
 
 
@@ -338,7 +355,8 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section,
     .two-section,
     .section-3,
-    .section-4{
+    .section-4,
+    .section-5{
         margin-left: 13.75rem;
     }
 
@@ -360,6 +378,10 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .box-3{
         width: 30%;
     }
+    /* sezione 5 */
+    img.img-width {
+        width: 100%;
+    }
 }
 
 
@@ -369,7 +391,8 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section,
     .two-section,
     .section-3,
-    .section-4{
+    .section-4,
+    .section-5{
         margin-left: 13.75rem;
     }
 
@@ -391,6 +414,10 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .box-3{
         width: 23%;
     }
+    /* sezione 5 */
+    img.img-width {
+        width: 100%;
+    }
 }
 
 /* screen 1200 */
@@ -400,7 +427,8 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section,
     .two-section,
     .section-3,
-    .section-4{
+    .section-4,
+    .section-5{
         margin-left: 13.75rem;
     }
 
@@ -418,8 +446,12 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .box-two {
         width: calc(100% / 7 + .875rem);
         }
-    /* sezione 3 */
+    /* sezione 3 4 5*/
     .box-3{
         width: calc(100% / 7 + .875rem);
+    }
+    /* sezione 5 */
+    img.img-width {
+        width: 100%;
     }
 }
