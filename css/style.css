@@ -45,8 +45,8 @@ header{
 }
 .header-button{
     color: var(--white);
-    border: 2px solid white;
-    border-radius: 30px;
+    border: .125rem solid white;
+    border-radius: 1.875rem;
     padding: .9375rem 2.5625rem;
 }
 .header-button a{
@@ -54,7 +54,7 @@ header{
 }
 .button-container{
     align-self: center;
-    padding-right: 5px;
+    padding-right: .3125rem;
 }
 /* HEADER */
 
@@ -72,7 +72,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--black);
-    height: calc(100% - 80px);
+    height: calc(100% - 5rem);
     width: 3.125rem;
     position: fixed;
 }
@@ -108,7 +108,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         display: flex;
         flex-direction: column;
         background-color: var(--black);
-        height: calc(100% - 80px);
+        height: calc(100% - 5rem);
         width: 13.75rem;
         position: fixed;
     }
@@ -147,7 +147,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         flex-direction: column;
         height: auto;
         flex-grow: 1;
-        min-height: 120px;
+        min-height: 7.5rem;
     } 
     .add-ico a i{
         font-size: 3.125rem;
@@ -167,7 +167,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         width: 13.75rem;
         margin: 0 auto;
         background: var(--grey);
-        height: 2px;
+        height: .125rem;
 
     }
     .man-logo p{
@@ -187,31 +187,33 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: fit-content;
 }
 /* FINE CONTENITORE SEZIONI */
 /* SECTION 1 */
     .first-section,     /*LARGHEZZA E MARGINE SEZIONI 1 E 2*/
     .two-section{
         width: 100%;
-        margin-left: 50px;
+        margin-left: 3.125rem;
     }
     .first-section-container{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 80px;
+        margin-top: 5rem;
         top: 3.75rem;
-        padding-top: 22px;
+        padding-top: 1.375rem;
     }
     .first-section-container p{
         padding: .625rem;
         color: var(--grey);
-        font-size: 11px;
+        font-size: .6875rem;
     }
 /* FINE SECTION 1 */
 /* SEZIONE 2 */
 .two-section{
     height: 100%;
+    margin-left: 3.125rem;
 }
 .container-sec-two{
     display: flex;
@@ -220,36 +222,59 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 
 .section-title h2{
     color: var(--white);
-    padding-top: 46px;
-    padding-bottom: 26px;
-    padding-left: 20px;
+    padding-top: 2.875rem;
+    padding-bottom: 1.625rem;
+    padding-left: 1.25rem;
+}
+.section-title p{
+    color: var(--grey);
+    padding-bottom: 1.875rem;
+    padding-left: 1.25rem;
 }
 .box-two{
     width: calc((100% - 20px) / 2);
-    margin: 5px;
+    margin: .3125rem;
     text-align: center;
 }
 .box-two img{
     width: 100%;
     display: block;
-    padding: 10px;
+    padding: .625rem;
 }
-.subtitle-pad h3{
+.subtitle-pad h3,
+.box-3 h3{
     padding-top: 1.25rem;
-    padding-bottom: 13px;
+    padding-bottom: .8125rem;
     color: var(--white);
 }
 .subtitle-pad p{
-    padding-bottom: 13px;
+    padding-bottom: .8125rem;
     color: var(--grey);
 }
 /* FINE SEZIONE 2 */
 /* SEZIONE 3 */
 .section-3{
+    width: 100%;
+    margin-left: 3.125rem;
+}
+.container-sec-3{
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+}
+.box-3{
+    margin: .3125rem;
+}
+.box-3 img{
+    width: 100%;
+    padding: .625rem;
+    display: block;
 }
 /* FINE SEZIONE 3 */
+/* SEZIONE 4 */
+.section-4{
+    width: 100%;
+}
+/* FINE SEZIONE 4 */
 /* MAIN */
 
 /* FOOTER */
@@ -273,12 +298,16 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         display: flex;
     }
 }
+
+
 /* SCREEN 577PX */
 @media screen and (min-width: 577px){
-    
+    /* sezione 1 */
     .first-section,
-    .two-section{
-        margin-left: 220px;
+    .two-section,
+    .section-3,
+    .section-4{
+        margin-left: 13.75rem;
     }
     .first-section{
         width:100%;
@@ -286,18 +315,28 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section-container p{
         padding: 1.125rem;
         color: var(--grey);
-        font-size: 13px;
+        font-size: .8125rem;
     }
-    
+      /* sezione 1 */
+    /* sezione 2 */
     .box-two {
     width: 43%;
     }
+    /* sezione 3 */
+    .box-3{
+        width: 43%;
+    }
 }
+
+
 /* SCREEN 768PX */
  @media screen and (min-width: 768px){
+    /* sezione 1 */
     .first-section,
-    .two-section{
-        margin-left: 220px;
+    .two-section,
+    .section-3,
+    .section-4{
+        margin-left: 13.75rem;
     }
 
     .first-section{
@@ -306,19 +345,29 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section-container p{
         padding: 1rem;
         color: var(--grey);
-        font-size: 15px;
+        font-size: .9375rem;
         flex-wrap: nowrap;
     }
+    /* sezione 1 */
+    /* sezione 2 */
     .box-two {
         width: 30%;
         }
+    /* sezione 3 */
+    .box-3{
+        width: 30%;
+    }
 }
-/* SCREEN 992PX */
 
+
+/* SCREEN 992PX */
 @media screen and (min-width: 992px){
+    /* sezione 1 */
     .first-section,
-    .two-section{
-        margin-left: 220px;
+    .two-section,
+    .section-3,
+    .section-4{
+        margin-left: 13.75rem;
     }
 
     .first-section{
@@ -327,20 +376,29 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section-container p{
         padding: 1.5rem;
         color: var(--grey);
-        font-size: 15px;
+        font-size: .9375rem;
         flex-wrap: nowrap;
     }
+    /* sezione 1 */
+    /* sezione 2 */
     .box-two {
         width: 23%;
         }
+    /* sezione 3 */
+    .box-3{
+        width: 23%;
+    }
 }
 
 /* screen 1200 */
 
 @media screen and (min-width: 1200px){
+    /* sezione 1 */
     .first-section,
-    .two-section{
-        margin-left: 220px;
+    .two-section,
+    .section-3,
+    .section-4{
+        margin-left: 13.75rem;
     }
 
     .first-section{
@@ -349,10 +407,16 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     .first-section-container p{
         padding: 1.5rem;
         color: var(--grey);
-        font-size: 18px;
+        font-size: 1.125rem;
         flex-wrap: nowrap;
     }
+    /* sezione 1 */
+    /* sezione 2 */
     .box-two {
-        width: calc(100% / 7 + 14px);
+        width: calc(100% / 7 + .875rem);
         }
+    /* sezione 3 */
+    .box-3{
+        width: calc(100% / 7 + .875rem);
+    }
 }
