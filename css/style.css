@@ -274,6 +274,9 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 .section-4{
     width: 100%;
 }
+.border-r{
+    border-radius: 50%;
+}
 /* FINE SEZIONE 4 */
 /* MAIN */
 
