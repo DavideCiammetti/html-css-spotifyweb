@@ -220,7 +220,8 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     color: var(--white);
     padding-top: 2.875rem;
     padding-bottom: 1.625rem;
-    padding-left: 1.25rem;
+    padding-left: .625rem;
+    font-size: 25px;
 }
 .section-title p{
     color: var(--grey);
@@ -298,17 +299,15 @@ img.img-width {
     width: 100%;
     height: 5.6rem;
 }
-
+.footer-container i,p, h5{
+    color: var(--white);
+}
 .foot-box{
-    border: 1px solid black;
-    background-color: aqua;
     display: flex;
     width: 30%;
     min-width: 9.625rem;
 }
 .foot-box-big{
-    border: 1px solid black;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -328,12 +327,22 @@ img.img-width {
 .img-left-foot{
     padding: 1.8125rem .625rem 2.0625rem .625rem;
 }
+    /* parte di sinistra con foto */
     /* icone sinistra */
 .icon-like-dir{
-    padding-left: 1.5rem;
+    padding:0 1.5rem;
     display: flex;
     flex-wrap: wrap;
 }
+.spacific-p{
+    display: flex;
+    flex-wrap: wrap;
+}
+.spacific-p p{
+    color: var(--grey);
+    padding-right: 7px;
+}
+
 .icon-like-dir .fa-heart{
    margin-right: .9375rem;
 }
@@ -357,12 +366,23 @@ img.img-width {
     .bar-time-center{
         justify-content: center;
         display: flex;
-        width: 230px;
+        width: 100%;
     }
     .time-bar{
         width: 60%;
-        height: 3px;
+        height: 4px;
+        margin-top: 10px;
         background-color:grey;
+    }
+    .current-time,
+    .total-time{
+        font-size: 13px;
+    }
+    .current-time{
+        padding-right: 10px;
+    }
+    .total-time{
+        padding-left: 10px;
     }
     .actual-time{
         width: 20%;
@@ -370,7 +390,28 @@ img.img-width {
         background-color: #c1c1c1;
     }
     /* parte centrale gestione canzone */
-/* parte di sinistra con foto */
+    .foot-box i,
+    .foot-box-big i{
+        font-size: 17px;
+        color: var(--white);
+    }
+    .foot-box i,
+    .foot-box-big i{
+        font-size: 17px;
+    }
+    /* pasrte di destra */
+    .sound-bar{
+        width: 40%;
+    }
+    .right-box-c{
+        justify-content: end;
+        align-items: center;
+        padding-right: 10px;
+    }
+    .general-command{
+        padding: 0 10px;
+    }
+     /* pasrte di destra */
 /* FOOTER */
 
 /* RESPONSIVE */
@@ -417,6 +458,11 @@ img.img-width {
     img.img-width {
         width: 100%;
     }
+    /* footer */
+    .foot-box i,
+    .foot-box-big i{
+        font-size: 20px;
+    }
 }
 
 
@@ -445,6 +491,9 @@ img.img-width {
     .box-two {
         width: 30%;
         }
+        .section-title h2{
+            font-size: 30px;
+        }
     /* sezione 3 */
     .box-3{
         width: 30%;
@@ -452,6 +501,14 @@ img.img-width {
     /* sezione 5 */
     img.img-width {
         width: 100%;
+    }
+    /* footer */
+    .foot-box i,
+    .foot-box-big i{
+        font-size: 30px;
+    }
+    .manage-song{
+        padding-top: 13px;
     }
 }
 
@@ -480,6 +537,9 @@ img.img-width {
     /* sezione 2 */
     .box-two {
         width: 23%;
+        }
+        .section-title h2{
+            font-size: 40px;
         }
     /* sezione 3 */
     .box-3{
@@ -516,6 +576,9 @@ img.img-width {
     /* sezione 2 */
     .box-two {
         width: calc(100% / 7 + .875rem);
+        }
+        .section-title h2{
+            font-size: 50px;
         }
     /* sezione 3 4 5*/
     .box-3{
