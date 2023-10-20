@@ -1,4 +1,4 @@
-@import url('./meta/responsive.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -183,7 +183,6 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 .main-container{    
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     height: fit-content;
 }
 /* FINE CONTENITORE SEZIONI */
@@ -232,6 +231,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
     width: calc((100% - 20px) / 2);
     margin: .3125rem;
     text-align: center;
+    position: relative;
 }
 .box-two img{
     width: 100%;
@@ -505,11 +505,12 @@ img.img-width {
     /* footer */
     .foot-box i,
     .foot-box-big i{
-        font-size: 30px;
+        font-size: 22px;
     }
     .manage-song{
         padding-top: 13px;
     }
+    
 }
 
 
