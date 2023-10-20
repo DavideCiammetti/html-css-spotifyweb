@@ -31,30 +31,27 @@ li{
 /* global */
 
 /* HEADER */
-header{
-    position: relative;    
-}
 .header-container{
-    background-color: var(--black);
+    background-color: rgb(0, 0, 0, 0.3);
     width: 100%;
-    height: 5rem;
-    opacity: 0.3;
+    height: 5.6rem;
     position: fixed;
     display: flex;
+    top: 0;
+    right: 0;
     justify-content: flex-end;
 }
-.header-button{
-    color: var(--white);
-    border: .125rem solid white;
-    border-radius: 1.875rem;
-    padding: .9375rem 2.5625rem;
-}
+
 .header-button a{
     color: var(--white);
 }
 .button-container{
     align-self: center;
     padding-right: .3125rem;
+    border: .125rem solid white;
+    border-radius: 1.875rem;
+    padding: .9375rem 2.5625rem;
+    margin-right: 10px;
 }
 /* HEADER */
 
@@ -72,7 +69,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--black);
-    height: calc(100% - 5rem);
+    height: calc(100% - 5.6rem);
     width: 3.125rem;
     position: fixed;
 }
@@ -201,11 +198,10 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 5rem;
-        top: 3.75rem;
         padding-top: 1.375rem;
     }
     .first-section-container p{
-        padding: .625rem;
+        padding: .3125rem;
         color: var(--grey);
         font-size: .6875rem;
     }
@@ -239,7 +235,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 .box-two img{
     width: 100%;
     display: block;
-    padding: .625rem;
+    padding: .3125rem;
 }
 .subtitle-pad h3,
 .box-3 h3{
@@ -268,7 +264,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
 }
 .box-3 img{
     width: 100%;
-    padding: .625rem;
+    padding: .3125rem;
     display: block;
 }
 /* FINE SEZIONE 3 */
@@ -294,12 +290,87 @@ img.img-width {
 
 /* FOOTER */
 .footer-container{
-    background-color: #da1515;
+    background-color: #282828;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     bottom: 0;
     width: 100%;
-    height: 5rem;
+    height: 5.6rem;
 }
+
+.foot-box{
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    width: 30%;
+    min-width: 9.625rem;
+}
+.foot-box-big{
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    min-width: 12.5rem;
+}
+/* parte di sinistra con foto */
+.img-foot-box{
+    display: flex;
+    align-items: center;
+}
+.img-foot-box img{
+    width: 35px;
+    height: 35px;
+}
+.img-left-foot{
+    padding: 1.8125rem .625rem 2.0625rem .625rem;
+}
+    /* icone sinistra */
+.icon-like-dir{
+    padding-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon-like-dir .fa-heart{
+   margin-right: .9375rem;
+}
+    /* icone sinistra */
+    /* parte centrale gestione canzone */
+    .bar-time-center{
+        padding-top: .9375rem;
+        padding-bottom: 1.625rem;
+    }
+    .manage-song {
+        padding-top: .625rem;
+    }
+    .padding-l-r{
+        padding-left: 1.375rem;
+        padding-right: 2rem;
+    }
+    .padding-r-l{
+        padding-left: 2rem;
+        padding-right: 1.375rem;
+    }
+    .bar-time-center{
+        justify-content: center;
+        display: flex;
+        width: 230px;
+    }
+    .time-bar{
+        width: 60%;
+        height: 3px;
+        background-color:grey;
+    }
+    .actual-time{
+        width: 20%;
+        height: 3px;
+        background-color: #c1c1c1;
+    }
+    /* parte centrale gestione canzone */
+/* parte di sinistra con foto */
 /* FOOTER */
 
 /* RESPONSIVE */
