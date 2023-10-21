@@ -29,6 +29,13 @@ li{
 
 /* global */
 
+/* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
+.first-section-container P:hover{
+    color: white;
+    border-bottom: 1px solid greenyellow;
+}
+/* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
+
 /* HEADER */
 .header-container{
     background-color: rgb(0, 0, 0, 0.3);
@@ -199,6 +206,7 @@ li.xs-li.logo-xs {          /*logo schermo xs*/
         padding: .3125rem;
         color: var(--grey);
         font-size: .6875rem;
+        border: 1px solid transparent;
     }
 /* FINE SECTION 1 */
 /* SEZIONE 2 */
