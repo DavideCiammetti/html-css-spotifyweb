@@ -38,6 +38,10 @@ li{
 .play-li:hover{
     color: var(--white);
 }
+.subtitle-pad h3:hover, 
+.box-3 h3:hover{
+    font-size: 1.75rem;
+}
 /* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
 
 /* HEADER */
