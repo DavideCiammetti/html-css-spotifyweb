@@ -34,6 +34,10 @@ li{
     color: white;
     border-bottom: 1px solid greenyellow;
 }
+.p-large:hover,
+.play-li:hover{
+    color: var(--white);
+}
 /* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
 
 /* HEADER */
