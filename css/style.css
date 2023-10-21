@@ -31,7 +31,7 @@ li{
 
 /* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
 .first-section-container P:hover{
-    color: white;
+    color: var(--white);
     border-bottom: 1px solid greenyellow;
 }
 .p-large:hover,
@@ -41,6 +41,10 @@ li{
 .subtitle-pad h3:hover, 
 .box-3 h3:hover{
     font-size: 1.75rem;
+}
+.box-3 img:hover,
+.box-two img:hover{
+    filter: brightness(0.30);
 }
 /* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
 
