@@ -46,6 +46,9 @@ li{
 .box-two img:hover{
     filter: brightness(0.30);
 }
+.actual-time:hover{
+    background-color: greenyellow;
+}
 /* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
 
 /* HEADER */
