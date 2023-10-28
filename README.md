@@ -11,7 +11,7 @@ This project is a copy of the spotify web app, using only HTML and CSS. Thanks t
 2. tablet
 3. desktop
 
-starting from the 'mobile first' mode. The overall structure of the layout reflects the ![Alt text](img/spotify-lg.png) reference image. 
+starting from the 'mobile first' mode. The overall structure of the layout reflects the ![layout-example](layout.img/spotify-lg.png) reference image. 
 
 ## Full Screen 
 
