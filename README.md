@@ -15,8 +15,8 @@ starting from the 'mobile first' mode. The overall structure of the layout refle
 
 ## Full Screen 
 
-![fullscreeen.img](<img/Screenshot 2023-10-27 191914.png>)
+![Full Screen](<layout.img/Screenshot 2023-10-27 191914.png>)
 
 ## Mobile Screen
 
-![Mobile screen](<img/Screenshot 2023-10-28 125652.png>)
+![Mobile Screen](<layout.img/Screenshot 2023-10-28 125652.png>)
