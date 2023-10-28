@@ -46,9 +46,30 @@ li{
 .box-two img:hover{
     filter: brightness(0.30);
 }
+.time-bar .end-point-1:hover::after{
+    content:'';
+    position: absolute;
+    height: 17px;
+    left: 47.2%;
+    bottom: 19px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.time-bar .end-point-2:hover::after{
+    content:'';
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    left: 92%;
+    top: 37px;
+    background-color: rgb(255, 255, 255);
+}
 .actual-time:hover{
     background-color: greenyellow;
 }
+
 /* GESTIONE DEGLI EVENTI (HOVER, ACTION ECC..) */
 
 /* HEADER */
